@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="668.0" style="-fx-background-color: #394D5F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.BillingGUIController">
+   <children>
+      <TabPane layoutX="34.0" layoutY="162.0" prefHeight="416.0" prefWidth="603.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Patient Info">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="403.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: white;">
+                     <effect>
+                        <Shadow />
+                     </effect>
+                     <children>
+                        <TextField editable="false" layoutX="31.0" layoutY="330.0" prefHeight="32.0" prefWidth="546.0" promptText="Ward Name" style="-: ;" />
+                        <TextField editable="false" layoutX="31.0" layoutY="292.0" prefHeight="32.0" prefWidth="120.0" promptText="Doctor ID" />
+                        <TextField editable="false" layoutX="157.0" layoutY="292.0" prefHeight="32.0" prefWidth="420.0" promptText="Doctor Name" />
+                        <DatePicker disable="true" editable="false" layoutX="324.0" layoutY="258.0" prefHeight="25.0" prefWidth="254.0" promptText="Discharge Date" style="-fx-background-color: lightgrey;" />
+                        <DatePicker disable="true" editable="false" layoutX="31.0" layoutY="258.0" prefHeight="25.0" prefWidth="286.0" promptText="Admit Date" style="-fx-background-color: lightgrey;" />
+                        <TextArea disable="true" editable="false" layoutX="26.0" layoutY="101.0" prefHeight="128.0" prefWidth="552.0" promptText="Disease detail" style="-fx-background-color: lightgrey;" text=" vcb" />
+                        <TextField editable="false" layoutX="367.0" layoutY="63.0" prefHeight="32.0" prefWidth="214.0" promptText="Blood Group" />
+                        <TextField editable="false" layoutX="25.0" layoutY="63.0" prefHeight="32.0" prefWidth="333.0" promptText="Gender" />
+                        <TextField editable="false" layoutX="25.0" layoutY="25.0" prefHeight="32.0" prefWidth="556.0" promptText="Patient Name" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Payment Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+                     <effect>
+                        <Shadow />
+                     </effect>
+                     <children>
+                        <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" style="-fx-border-color: green; -fx-background-color: white;" text="New" textFill="#076113" />
+                        <Button layoutX="84.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: white; -fx-border-color: #d7b002;" text="Save" textFill="#d7b002" />
+                        <Button disable="true" layoutX="142.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" style="-fx-border-color: #e40303; -fx-background-color: white;" text="Delete" textFill="#e40303" />
+                        <Button disable="true" layoutX="202.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-color: #070e9d;" text="Update" textFill="#8607b5" />
+                        <Button layoutX="262.0" layoutY="14.0" mnemonicParsing="false" style="-fx-border-color: #070e9d; -fx-background-color: white;" text="GetData" textFill="#070e9d" />
+                        <TextField layoutX="24.0" layoutY="56.0" prefHeight="31.0" prefWidth="138.0" promptText="No. Of Days" />
+                        <DatePicker layoutX="168.0" layoutY="56.0" prefHeight="31.0" prefWidth="199.0" promptText="Billing Date" />
+                        <Pane layoutX="24.0" layoutY="94.0" prefHeight="174.0" prefWidth="558.0" style="-fx-border-style: dotted; -fx-border-color: #394D5F;">
+                           <children>
+                              <TextField editable="false" layoutX="223.0" layoutY="16.0" prefHeight="31.0" prefWidth="196.0" style="-fx-background-color: lightgrey;" />
+                              <TextField editable="false" layoutX="223.0" layoutY="53.0" prefHeight="31.0" prefWidth="196.0" style="-fx-background-color: lightgrey;" />
+                              <TextField editable="false" layoutX="223.0" layoutY="90.0" prefHeight="31.0" prefWidth="196.0" style="-fx-background-color: lightgrey;" />
+                              <TextField editable="false" layoutX="223.0" layoutY="128.0" prefHeight="31.0" prefWidth="196.0" style="-fx-background-color: lightgrey;" />
+                              <Label layoutX="99.0" layoutY="23.0" text="Per Bed Charge / Rs." />
+                              <Label layoutX="99.0" layoutY="60.0" text="Total Bed Charge / Rs." />
+                              <Label layoutX="99.0" layoutY="97.0" text="Service Charge / Rs." />
+                              <Label layoutX="99.0" layoutY="135.0" style="-fx-font-weight: bold;" text="Total Charges / Rs." />
+                           </children>
+                        </Pane>
+                        <ComboBox layoutX="24.0" layoutY="281.0" prefHeight="28.0" prefWidth="163.0" promptText="Payment Mode" />
+                        <TextField layoutX="192.0" layoutY="281.0" prefHeight="28.0" prefWidth="390.0" promptText="Payment Mode Detail" />
+                        <TextField layoutX="24.0" layoutY="316.0" prefHeight="28.0" prefWidth="210.0" promptText="Paid Amount" />
+                        <TextField layoutX="240.0" layoutY="316.0" prefHeight="28.0" prefWidth="343.0" promptText="Due Amount" style="-fx-background-color: lightgrey;" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Billing History">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="389.0" prefWidth="403.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+                           <effect>
+                              <Shadow />
+                           </effect>
+                           <children>
+                              <ScrollPane layoutY="4.0" prefHeight="384.0" prefWidth="603.0" style="-fx-background-color: white;">
+                                 <content>
+                                    <TableView prefHeight="370.0" prefWidth="592.0">
+                                      <columns>
+                                        <TableColumn prefWidth="63.0" text="billingId" />
+                                        <TableColumn prefWidth="93.0" text="billingDate" />
+                                          <TableColumn prefWidth="58.0" text="NOD" />
+                                          <TableColumn prefWidth="89.0" text="Total Charge (Rs.)" />
+                                          <TableColumn prefWidth="159.0" text="Paid Amount (Rs.)" />
+                                          <TableColumn prefWidth="129.0" text="Due Amount (Rs.)" />
+                                      </columns>
+                                    </TableView>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="34.0" layoutY="14.0" text="Billing Interface ..." textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField layoutX="34.0" layoutY="95.0" prefHeight="38.0" prefWidth="450.0" promptText="Enter Patient ID" />
+      <Separator layoutX="34.0" layoutY="70.0" prefHeight="0.0" prefWidth="603.0" />
+      <Button layoutX="492.0" layoutY="95.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" text="Search" />
+   </children>
+</AnchorPane>

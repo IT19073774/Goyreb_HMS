@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" style="-fx-background-color: #fef9e6;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="668.0" layoutY="139.0" style="-fx-background-color: #fef9e6;" text="User Details" textAlignment="CENTER" textFill="#0b1320">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField layoutX="441.0" layoutY="351.0" maxHeight="37.0" prefHeight="37.0" prefWidth="655.0" promptText="Email" />
+      <Button layoutX="441.0" layoutY="544.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #394d5f;" text="NEW" textFill="#f2f2f2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="616.0" layoutY="544.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #394d5f;" text="SAVE" textFill="#f2f2f2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="785.0" layoutY="544.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #394d5f;" text="DELETE" textFill="#f2f2f2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="441.0" layoutY="614.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="655.0" style="-fx-background-color: #394d5f;" text="GET DATA" textFill="#f2f2f2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="946.0" layoutY="544.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: #394d5f;" text="UPDATE" textFill="#f2f2f2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextField layoutX="441.0" layoutY="230.0" maxHeight="37.0" prefHeight="37.0" prefWidth="655.0" promptText="Name" />
+      <TextField layoutX="441.0" layoutY="292.0" maxHeight="37.0" prefHeight="37.0" prefWidth="655.0" promptText="User Name" />
+      <PasswordField layoutX="441.0" layoutY="414.0" prefHeight="37.0" prefWidth="655.0" promptText="Password" />
+      <TextField layoutX="441.0" layoutY="470.0" maxHeight="37.0" prefHeight="37.0" prefWidth="655.0" promptText="Contact No" />
+   </children>
+</Pane>

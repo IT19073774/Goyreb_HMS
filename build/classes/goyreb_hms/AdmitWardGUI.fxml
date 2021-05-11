@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #FEF9E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms_2.AdmitWardGUIController">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="1366.0" style="-fx-background-color: #394D5F;">
+         <children>
+            <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_back_52px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="54.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" rotate="-180.0" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_back_52px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="1307.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_close_window_96px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="1254.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_maximize_window_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1203.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_minimize_window_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1109.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_male_user_64px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1063.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_important_mail_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1019.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_notification_100px_3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="41.0" layoutY="74.0" prefHeight="54.0" prefWidth="1280.0" style="-fx-background-color: #4a4b7b;">
+         <children>
+            <Label layoutX="18.0" layoutY="5.0" prefHeight="31.0" prefWidth="181.0" text="Admit Ward" textFill="#dde5e7">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="1069.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons&amp;Images/icons8_siren_100px.png" />
+               </image>
+            </ImageView>
+            <ToggleButton layoutX="1137.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-cursor: hand; -fx-background-color: #c80815;" text="Red Action" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </ToggleButton>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="41.0" layoutY="145.0" opacity="0.95" prefHeight="523.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <VBox prefHeight="523.0" prefWidth="620.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Patient ID" textFill="#0b1320">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea prefHeight="27.0" prefWidth="422.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Patient Name" textFill="#0b1320">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea prefHeight="27.0" prefWidth="422.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Gender" textFill="#0b1320">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <RadioButton mnemonicParsing="false" text="Male">
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Female">
+                           <HBox.margin>
+                              <Insets left="15.0" top="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Other">
+                           <HBox.margin>
+                              <Insets left="15.0" top="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Age">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextArea prefHeight="27.0" prefWidth="58.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Blood Group">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <RadioButton mnemonicParsing="false" text="A+">
+                           <HBox.margin>
+                              <Insets top="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="B+">
+                           <HBox.margin>
+                              <Insets left="15.0" top="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="AB+">
+                           <HBox.margin>
+                              <Insets left="15.0" top="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="O+">
+                           <HBox.margin>
+                              <Insets left="15.0" top="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="18.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="571.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" text="A-">
+                           <HBox.margin>
+                              <Insets left="158.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="B-">
+                           <HBox.margin>
+                              <Insets left="18.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="AB-">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="O-">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Disease" textFill="#0b1320">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextArea prefHeight="27.0" prefWidth="422.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Admit Date" textFill="#0b1320">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker>
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="57.0" prefWidth="369.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="144.0" text="Discharge Date" textFill="#0b1320">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker>
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="661.0" prefHeight="266.0" prefWidth="620.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <VBox prefHeight="245.0" prefWidth="620.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <HBox prefHeight="49.0" prefWidth="620.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="138.0" text="Ward No" textFill="#0b1320">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" top="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextArea prefHeight="30.0" prefWidth="116.0">
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </TextArea>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="49.0" prefWidth="620.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="138.0" text="Bed No" textFill="#0b1320">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextArea prefHeight="30.0" prefWidth="116.0">
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </TextArea>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="133.0" prefWidth="620.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="138.0" text="Doctor's Remark" textFill="#0b1320">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextArea prefHeight="103.0" prefWidth="419.0">
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </TextArea>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="661.0" layoutY="278.0" prefHeight="245.0" prefWidth="620.0">
+               <children>
+                  <HBox prefHeight="55.0" prefWidth="620.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="138.0" text="Contact Number 1" textFill="#0b1320">
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextArea prefHeight="55.0" prefWidth="295.0">
+                           <HBox.margin>
+                              <Insets bottom="12.0" top="17.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="620.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="138.0" text="Contact Number 2" textFill="#0b1320">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea prefHeight="55.0" prefWidth="295.0">
+                           <HBox.margin>
+                              <Insets bottom="12.0" top="17.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="130.0" prefWidth="620.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="138.0" text="Address" textFill="#0b1320">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextArea prefHeight="50.0" prefWidth="295.0">
+                           <HBox.margin>
+                              <Insets bottom="12.0" top="17.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="652.0" layoutY="21.0" prefHeight="477.0" prefWidth="4.0" style="-fx-background-color: #0b1320;" />
+            <AnchorPane layoutX="670.0" layoutY="257.0" prefHeight="1.0" prefWidth="590.0" style="-fx-background-color: #0b1320;" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="54.0" fitWidth="74.0" layoutX="1305.0" layoutY="714.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons&amp;Images/WhatsApp%20Image%202021-04-17%20at%2020.43.32.jpeg" />
+         </image>
+      </ImageView>
+      <CheckBox layoutX="83.0" layoutY="688.0" mnemonicParsing="false" />
+      <Button layoutX="117.0" layoutY="681.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" style="-fx-background-color: #394d5f; -fx-cursor: hand;" text="Save &amp; Submit" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

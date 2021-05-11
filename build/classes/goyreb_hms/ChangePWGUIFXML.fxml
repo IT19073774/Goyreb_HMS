@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="900.0" style="-fx-background-color: #FEF9E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="72.0" layoutY="25.0" prefHeight="49.0" prefWidth="256.0" text="Change Password">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="524.0" layoutX="43.0" layoutY="79.0" stroke="#fffbfb" strokeType="INSIDE" width="784.0" />
+      <Label layoutX="91.0" layoutY="93.0" prefHeight="63.0" prefWidth="266.0" text="Username or Email Address">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="547.0" layoutY="108.0" prefHeight="32.0" prefWidth="225.0" promptText="Username or Email Address" />
+      <Label layoutX="88.0" layoutY="158.0" prefHeight="39.0" prefWidth="302.0" text="Old - Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="547.0" layoutY="153.0" prefHeight="39.0" prefWidth="219.0" promptText="Old - Password" />
+      <Label layoutX="90.0" layoutY="280.0" prefHeight="39.0" prefWidth="302.0" text="New Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="388.0" prefHeight="49.0" prefWidth="275.0" text="Confirm Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="544.0" layoutY="391.0" prefHeight="39.0" prefWidth="217.0" promptText="Re-type password" />
+      <PasswordField layoutX="545.0" layoutY="284.0" prefHeight="39.0" prefWidth="219.0" promptText="Type a new password" />
+      <CheckBox layoutX="113.0" layoutY="554.0" mnemonicParsing="false" text="Remembe me">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="544.0" layoutY="544.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #394D5F;" text="Change Password" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="158.0" fitWidth="109.0" layoutX="1257.0" layoutY="583.0">
+         <image>
+            <Image url="@../../WhatsApp%20Image%202021-04-17%20at%2020.40.46.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
