@@ -16,7 +16,7 @@
       </ImageView>
       <Pane layoutX="289.0" prefHeight="392.0" prefWidth="266.0" style="-fx-background-color: rgba(0, 0, 0, 0.8);">
          <children>
-            <Button fx:id="loginBtn" layoutX="146.0" layoutY="306.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="88.0" text="Login" />
+            <Button fx:id="loginBtn" layoutX="139.0" layoutY="325.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="95.0" text="Login" />
             <TextField layoutX="31.0" layoutY="188.0" prefHeight="37.0" prefWidth="203.0" promptText="Username" />
             <PasswordField layoutX="31.0" layoutY="232.0" prefHeight="37.0" prefWidth="203.0" promptText="Password" />
             <Label layoutX="31.0" layoutY="165.0" prefHeight="17.0" prefWidth="137.0" text="Enter Credentials Here ..." textFill="WHITE" />
@@ -26,6 +26,13 @@
                   <Image url="@image/main-logo.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="24.0" layoutX="200.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/visible_icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginBtn1" layoutX="34.0" layoutY="325.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: #dd6d6d;" text="Clear" textFill="WHITE" />
+            <CheckBox layoutX="34.0" layoutY="296.0" mnemonicParsing="false" text="Remember Me" textFill="WHITE" />
          </children>
       </Pane>
    </children>
