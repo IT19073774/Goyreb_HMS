@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.FXMLDocumentController">
+    <children>
+        <Button fx:id="n_btn" layoutX="120.0" layoutY="30.0" onAction="#openNurse" text="Nurse" />
+      <Button fx:id="r_btn" layoutX="120.0" layoutY="70.0" mnemonicParsing="false" onAction="#openRoom" text="Room" />
+      <Button fx:id="w_btn" layoutX="123.0" layoutY="112.0" mnemonicParsing="false" onAction="#openWard" text="Ward" />
+    </children>
+</AnchorPane>
