@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.PatiemtDischargeInfoRoomController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-13.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="1450.0" style="-fx-background-color: #394d5f;">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="94.0" layoutX="1356.0" layoutY="625.0">
+               <image>
+                  <Image url="@../../../../../NetBeansProjects/Goyreb_HMS_2/WhatsApp%20Image%202021-04-17%20at%2020.40.46.jpeg" />
+               </image>
+            </ImageView>
+            <TabPane layoutX="62.0" layoutY="86.0" prefHeight="562.0" prefWidth="1206.0" stylesheets="@stylesheet.css" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Patient's  Details">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fef9e6;" styleClass="bg" stylesheets="@stylesheet.css">
+                           <children>
+                              <Label layoutX="336.0" layoutY="85.0" prefHeight="42.0" prefWidth="134.0" styleClass="lab" stylesheets="@stylesheet.css" text="Patient ID" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="590.0" layoutY="94.0" promptText="Patient ID" styleClass="txt2" />
+                              <Button fx:id="btngetdata" layoutX="867.0" layoutY="93.0" mnemonicParsing="false" styleClass="primary_button" stylesheets="@stylesheet.css" text="Get Data" textFill="#fcf3f3" />
+                              <Label layoutX="331.0" layoutY="160.0" prefHeight="27.0" prefWidth="131.0" styleClass="lab" stylesheets="@stylesheet.css" text="Patient Name" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="588.0" layoutY="154.0" promptText="Patient Name" styleClass="txt2" />
+                              <Label layoutX="331.0" layoutY="230.0" prefHeight="25.0" prefWidth="95.0" styleClass="lab" stylesheets="@stylesheet.css" text="Gender" textFill="#0a0a0a">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton layoutX="590.0" layoutY="230.0" mnemonicParsing="false" text="Male" textFill="#141414" />
+                              <RadioButton layoutX="725.0" layoutY="230.0" mnemonicParsing="false" text="Female" textFill="#111010" />
+                              <Label layoutX="331.0" layoutY="290.0" prefHeight="27.0" prefWidth="125.0" styleClass="lab" stylesheets="@stylesheet.css" text="Blood Group" textFill="#1b1a1a">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="587.0" layoutY="289.0" promptText="Blood Group" styleClass="txt2" />
+                              <Label layoutX="334.0" layoutY="357.0" prefHeight="29.0" prefWidth="122.0" styleClass="lab" stylesheets="@stylesheet.css" text="Phone No" textFill="#141313">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="588.0" layoutY="358.0" promptText="Phone Number" styleClass="txt2" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Room Details">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="bg" stylesheets="@stylesheet.css">
+                           <children>
+                              <Label layoutX="353.0" layoutY="113.0" prefHeight="45.0" prefWidth="146.0" styleClass="lab" stylesheets="@stylesheet.css" text="Room No" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="557.0" layoutY="122.0" promptText="Room Number" styleClass="txt2" />
+                              <Label layoutX="353.0" layoutY="189.0" prefHeight="27.0" prefWidth="109.0" styleClass="lab" text="Room Type" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker layoutX="192.0" layoutY="318.0" />
+                              <Label layoutX="226.0" layoutY="279.0" styleClass="lab" text="Date of Admission" textFill="#111111">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="723.0" layoutY="278.0" styleClass="lab" text="Date of Discharge" textFill="#111010">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker layoutX="704.0" layoutY="323.0" />
+                              <ChoiceBox fx:id="roomType" layoutX="555.0" layoutY="186.0" prefHeight="39.0" prefWidth="228.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Doctor's  Details">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="bg" stylesheets="@stylesheet.css">
+                           <children>
+                              <Label layoutX="368.0" layoutY="121.0" prefHeight="28.0" prefWidth="89.0" styleClass="lab" text="Doctor ID" textFill="#171717">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="674.0" layoutY="123.0" promptText="Doctor ID" styleClass="txt2" />
+                              <Label layoutX="364.0" layoutY="200.0" styleClass="lab" text="Doctor's Name" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="673.0" layoutY="194.0" promptText="Doctor's Name" styleClass="txt2" />
+                              <Label layoutX="362.0" layoutY="269.0" prefHeight="30.0" prefWidth="214.0" styleClass="lab" text="Doctor's Specialization" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="671.0" layoutY="269.0" promptText="specialization" styleClass="txt2" />
+                              <TextField alignment="CENTER" layoutX="375.0" layoutY="353.0" prefHeight="57.0" prefWidth="491.0" promptText="Remarks" styleClass="txt2" />
+                              <Button fx:id="btnSave" layoutX="1021.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleDialog" prefHeight="41.0" prefWidth="115.0" styleClass="primary_button" stylesheets="@stylesheet.css" text="Save" textFill="#fcf3f3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <Label layoutX="18.0" layoutY="19.0" prefHeight="51.0" prefWidth="380.0" text="Patient Discharge Details - Room" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

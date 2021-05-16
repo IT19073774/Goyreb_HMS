@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.ChangePwGUIController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="1386.0" style="-fx-background-color: #fef9e6;">
+         <children>
+            <ImageView fitHeight="154.0" fitWidth="122.0" layoutX="1258.0" layoutY="594.0">
+               <image>
+                  <Image url="@image/logo.jpeg" />
+               </image>
+            </ImageView>
+            <TabPane layoutX="84.0" layoutY="44.0" prefHeight="646.0" prefWidth="1136.0" side="LEFT" style="-fx-background-color: #394d5f;" stylesheets="@stylesheet.css" tabClosingPolicy="UNAVAILABLE">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <tabs>
+                  <Tab text="Reset Password">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="740.0" prefWidth="1109.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fef9e6" height="574.0" layoutX="101.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="914.0" />
+                              <Label layoutX="132.0" layoutY="50.0" prefHeight="40.0" prefWidth="257.0" text="Change Password">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="258.0" layoutY="139.0" prefHeight="49.0" prefWidth="299.0" styleClass="lab" text="Username or Email Address">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField alignment="CENTER" layoutX="558.0" layoutY="144.0" prefHeight="43.0" prefWidth="357.0" promptText="Username or Email Address" styleClass="txt2" />
+                              <Label layoutX="269.0" layoutY="192.0" prefHeight="45.0" prefWidth="171.0" styleClass="lab" text="Old - Password">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField alignment="CENTER" layoutX="558.0" layoutY="193.0" prefHeight="39.0" prefWidth="277.0" promptText="old password" styleClass="txt2" />
+                              <Label layoutX="278.0" layoutY="333.0" prefHeight="37.0" prefWidth="182.0" styleClass="lab" text="New Password">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField alignment="CENTER" layoutX="561.0" layoutY="333.0" prefHeight="41.0" prefWidth="271.0" promptText="Tyoe a new password" styleClass="txt2" />
+                              <Label layoutX="279.0" layoutY="379.0" prefHeight="37.0" prefWidth="195.0" styleClass="lab" text="Confirm Password">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField alignment="CENTER" layoutX="561.0" layoutY="388.0" prefHeight="37.0" prefWidth="271.0" promptText="Re-type password" styleClass="txt2" />
+                              <CheckBox layoutX="166.0" layoutY="535.0" mnemonicParsing="false" text="Remember me">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                              <Button fx:id="btnReset" layoutX="697.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleDialog" prefHeight="60.0" prefWidth="289.0" style="-fx-background-color: #394d5f;" styleClass="primary_button" text="Reset Password" textFill="#f8f8f8">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Forgot Password">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fef9e6" height="554.0" layoutX="207.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" width="732.0" />
+                              <Label layoutX="222.0" layoutY="60.0" text="Forgot Password">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="111.0" fitWidth="121.0" layoutX="526.0" layoutY="211.0">
+                                 <image>
+                                    <Image url="@image/lock.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="480.0" layoutY="147.0" prefHeight="43.0" prefWidth="249.0" text="Trouble Logging In ?">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="234.0" layoutY="302.0" prefHeight="97.0" prefWidth="679.0" text="Enter your email or username and we'll send you a link to get back into your account">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField alignment="CENTER" layoutX="331.0" layoutY="416.0" prefHeight="55.0" prefWidth="469.0" promptText="Username or Email Address" styleClass="txt2" />
+                              <Button fx:id="btnLink" layoutX="468.0" layoutY="513.0" mnemonicParsing="false" onAction="#handleLink" prefHeight="33.0" prefWidth="231.0" style="-fx-background-color: #393d5f;" text="Send Login Link" textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
