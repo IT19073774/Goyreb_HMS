@@ -106,6 +106,39 @@ public class MainGUIController implements Initializable {
         stage.show();
     }
     
+    @FXML
+    void WardMasterOnClick(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("ward.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Hospital Management System");
+        stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+        stage.show();
+    }
+    
+    @FXML
+    void NurseMasterOnClick(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("Nurse.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Hospital Management System");
+        stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+        stage.show();
+    }
+    
+    @FXML
+    void RoomMasterOnClick(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("Room.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Hospital Management System");
+        stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+        stage.show();
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
