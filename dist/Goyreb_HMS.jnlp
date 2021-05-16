@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Goyreb_HMS.jar" size="769293" download="eager" />
+    <jar href="Goyreb_HMS.jar" size="769567" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="goyreb_hms.Goyreb_HMS"  name="Goyreb_HMS" />
   <update check="always"/>

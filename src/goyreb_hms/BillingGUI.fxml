@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -10,11 +11,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="668.0" style="-fx-background-color: #394D5F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.BillingGUIController">
    <children>
-      <TabPane layoutX="34.0" layoutY="162.0" prefHeight="416.0" prefWidth="603.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="34.0" layoutY="162.0" prefHeight="413.0" prefWidth="603.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Patient Info">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="403.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: white;">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="454.0" prefWidth="603.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: white;">
                      <effect>
                         <Shadow />
                      </effect>
@@ -61,6 +62,7 @@
                         <TextField layoutX="192.0" layoutY="281.0" prefHeight="28.0" prefWidth="390.0" promptText="Payment Mode Detail" />
                         <TextField layoutX="24.0" layoutY="316.0" prefHeight="28.0" prefWidth="210.0" promptText="Paid Amount" />
                         <TextField layoutX="240.0" layoutY="316.0" prefHeight="28.0" prefWidth="343.0" promptText="Due Amount" style="-fx-background-color: lightgrey;" />
+                        <Button layoutX="477.0" layoutY="15.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="105.0" style="-fx-border-color: #e70f89; -fx-background-color: white;" text="PRINT BILL" textAlignment="RIGHT" textFill="#e70f89" />
                      </children></AnchorPane>
             </content>
           </Tab>
@@ -68,14 +70,14 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <AnchorPane prefHeight="389.0" prefWidth="403.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+                        <AnchorPane prefHeight="386.0" prefWidth="606.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
                            <effect>
                               <Shadow />
                            </effect>
                            <children>
-                              <ScrollPane layoutY="4.0" prefHeight="384.0" prefWidth="603.0" style="-fx-background-color: white;">
+                              <ScrollPane layoutX="3.0" layoutY="127.0" prefHeight="252.0" prefWidth="603.0" style="-fx-background-color: white;">
                                  <content>
-                                    <TableView prefHeight="370.0" prefWidth="592.0">
+                                    <TableView prefHeight="307.0" prefWidth="596.0">
                                       <columns>
                                         <TableColumn prefWidth="63.0" text="billingId" />
                                         <TableColumn prefWidth="93.0" text="billingDate" />
@@ -87,6 +89,12 @@
                                     </TableView>
                                  </content>
                               </ScrollPane>
+                              <DatePicker layoutX="151.0" layoutY="18.0" prefHeight="25.0" prefWidth="212.0" />
+                              <DatePicker layoutX="151.0" layoutY="48.0" prefHeight="25.0" prefWidth="213.0" />
+                              <Button layoutX="264.0" layoutY="82.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" style="-fx-border-color: #5a858c; -fx-font-weight: bold; -fx-background-color: white;" text="GENERATE" textFill="#5a858c" />
+                              <Button layoutX="463.0" layoutY="37.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="105.0" style="-fx-border-color: #e70f89; -fx-background-color: white;" text="PRINT REPORT" textAlignment="RIGHT" textFill="#e70f89" />
+                              <Label layoutX="39.0" layoutY="22.0" text="Start Date :" />
+                              <Label layoutX="39.0" layoutY="52.0" text="End Date :" />
                            </children>
                         </AnchorPane>
                      </children></AnchorPane>
@@ -102,5 +110,10 @@
       <TextField layoutX="34.0" layoutY="95.0" prefHeight="38.0" prefWidth="450.0" promptText="Enter Patient ID" />
       <Separator layoutX="34.0" layoutY="70.0" prefHeight="0.0" prefWidth="603.0" />
       <Button layoutX="492.0" layoutY="95.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" text="Search" />
+      <ImageView fitHeight="57.0" fitWidth="209.0" layoutX="465.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/main-logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
