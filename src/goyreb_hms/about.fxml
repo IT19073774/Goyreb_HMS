@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #FDE9CC;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1430.0" layoutY="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/side-logo.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="150.0" prefWidth="1600.0" style="-fx-background-color: #4A4B7B;">
+         <children>
+            <ImageView fitHeight="150.0"  layoutX="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/main-logo.png" />
+               </image>
+            </ImageView>
+            
+            <Label layoutX="691.0" layoutY="38.0" text="ABOUT US" textFill="#fde9cc">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/asel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="725.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/ashvin.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1165.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/sadeesha.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="214.0" fitWidth="229.0" layoutX="686.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Suhith.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1165.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Thanuri.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/thushan.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="208.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asel Pathirawasam- Associate Software Engineer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="655.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ashvinn Kanagar- Teach Lead- Development">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1095.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sadeehsa Dias- Associate Software Engineer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="1095.0" layoutY="755.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thanuri Piyaratne -Software Engineer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="655.0" layoutY="764.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suhith Jayasekara- Associate Software Engineer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="208.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thushan Sriskandarajah- Associate Software Engineer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="290.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/fb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="341.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/in.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="397.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/l.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="276.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/fb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="327.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/in.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="383.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/l.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="735.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/fb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="786.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/in.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="842.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/l.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="733.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/fb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="784.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/in.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="840.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/l.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="1174.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/fb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="1225.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/in.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="1281.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/l.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="1175.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/fb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="1226.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/in.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="24.0" layoutX="1282.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/l.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="690.0" layoutY="192.0" text="Meet Our Team" textFill="#151515">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
