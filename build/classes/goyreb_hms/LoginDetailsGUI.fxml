@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FEF9E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.LoginDetailsGUIController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="1000.0" style="-fx-background-color: #394D5F;">
+         <children>
+            <Label layoutX="23.0" layoutY="8.0" prefHeight="40.0" prefWidth="200.0" text="Login Details" textFill="#fef9e6">
+               <font>
+                  <Font name="SansSerif Bold" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="950.0" layoutY="14.0" onMouseClicked="#lgNotificationDisplay" onMouseExited="#lgNotificationExit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_topic_push_notification_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="32.0" layoutY="82.0" prefHeight="482.0" prefWidth="222.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image3.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="192.0" prefHeight="28.0" prefWidth="122.0" text="Dr. Jenna Simon">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="249.0" prefHeight="28.0" prefWidth="200.0" text="E-mail : Jenna.S@HMS.AU">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="290.0" prefHeight="28.0" prefWidth="200.0" text="Contact No : 832 276 3455">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="329.0" prefHeight="28.0" prefWidth="200.0" text="Specialized in : Neurology">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="368.0" prefHeight="28.0" prefWidth="200.0" text="Working Status : Active">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="405.0" prefHeight="28.0" prefWidth="200.0" text="Last login : 5/10/2021 @ 2.30 p.m">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TabPane layoutX="292.0" layoutY="207.0" prefHeight="341.0" prefWidth="669.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="     Users      ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" promptText="Search" />
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="172.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8_search_52px.png" />
+                           </image>
+                        </ImageView>
+                        <HBox layoutX="14.0" layoutY="48.0" prefHeight="40.0" prefWidth="643.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Profile Pic">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Username">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Password">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Status">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="120.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="14.0" layoutY="95.0" prefHeight="48.0" prefWidth="643.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false">
+                                 <HBox.margin>
+                                    <Insets left="-50.0" top="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@image/image1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="Albuto@HMS90">
+                                 <HBox.margin>
+                                    <Insets left="80.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="############">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8_secure_48px.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label1" alignment="CENTER" prefHeight="21.0" prefWidth="96.0" style="-fx-background-color: #394D5f;" stylesheets="@../../lable1.css" text="Active" textFill="#ebebeb">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="4.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="14.0" layoutY="143.0" prefHeight="48.0" prefWidth="643.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false">
+                                 <HBox.margin>
+                                    <Insets left="-50.0" top="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/image2.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="Mike.V@HMS98">
+                                 <HBox.margin>
+                                    <Insets left="80.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="############">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8_secure_48px.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label4" alignment="CENTER" prefHeight="21.0" prefWidth="96.0" style="-fx-background-color: #394D5f;" text="Active" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="13.0" layoutY="191.0" prefHeight="48.0" prefWidth="643.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false">
+                                 <HBox.margin>
+                                    <Insets left="-50.0" top="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/image3.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="Jenna.S@HMS98">
+                                 <HBox.margin>
+                                    <Insets left="80.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="############">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8_secure_48px.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label2" alignment="CENTER" prefHeight="21.0" prefWidth="96.0" style="-fx-background-color: #394D5f;" text="Active" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="13.0" layoutY="239.0" prefHeight="48.0" prefWidth="643.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false">
+                                 <HBox.margin>
+                                    <Insets left="-50.0" top="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/image4.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="Tricia.K@HMS99">
+                                 <HBox.margin>
+                                    <Insets left="80.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="############">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icons8_secure_48px.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label3" alignment="CENTER" prefHeight="21.0" prefWidth="96.0" style="-fx-background-color: #394D5f;" text="Active" textFill="#ebebeb">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <Label alignment="CENTER" layoutX="559.0" layoutY="18.0" prefHeight="17.0" prefWidth="89.0" text="1 - 4 of 250" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="     Add new users     ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" promptText="Search" />
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="174.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8_search_52px.png" />
+                           </image>
+                        </ImageView>
+                        <HBox layoutX="13.0" layoutY="50.0" prefHeight="40.0" prefWidth="643.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Profile Pic">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Username">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Password">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Action">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="70.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="13.0" layoutY="90.0" prefHeight="48.0" prefWidth="643.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false">
+                                 <HBox.margin>
+                                    <Insets left="-50.0" top="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/image7.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="Betho.G@HMS90">
+                                 <HBox.margin>
+                                    <Insets left="80.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="############">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" style="-fx-background-color: #394D5F;" text="Add" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#removeNewUser" style="-fx-border-color: #394D5F;" text="Remove" textFill="#394d5f">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="13.0" layoutY="148.0" prefHeight="48.0" prefWidth="643.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false">
+                                 <HBox.margin>
+                                    <Insets left="-50.0" top="5.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/image6.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="-2.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="Nelli.T@HMS88">
+                                 <HBox.margin>
+                                    <Insets left="80.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="21.0" prefWidth="96.0" text="############">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" style="-fx-background-color: #394D5F;" text="Add" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="50.0" top="2.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#removeNewUser" style="-fx-border-color: #394D5F;" text="Remove" textFill="#394d5f">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="2.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <Label alignment="CENTER" layoutX="557.0" layoutY="18.0" prefHeight="17.0" prefWidth="89.0" text="1 - 2 of 2" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="     Suspend     ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="279.0" layoutY="142.0" prefHeight="28.0" prefWidth="111.0" text="-- No record --" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="     Disable     ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" promptText="Search" />
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="172.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icons8_search_52px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="560.0" layoutY="18.0" prefHeight="17.0" prefWidth="89.0" text="1 of 1" />
+                        <HBox layoutX="13.0" layoutY="54.0" prefHeight="40.0" prefWidth="643.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Profile Pic">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Username">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="80.0" text="Action">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="110.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="14.0" layoutY="94.0" prefHeight="40.0" prefWidth="643.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false">
+                                 <HBox.margin>
+                                    <Insets left="-40.0" top="1.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/image5.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="-5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="110.0" text="Serene.G@HMS97">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="70.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" style="-fx-background-color: #394D5F;" text="Enable" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="60.0" top="-3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="367.0" layoutY="17.0" mnemonicParsing="false" onAction="#removeNewUser" style="-fx-border-color: #394D5F;" text="Remove" textFill="#394d5f">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="-3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="60.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="     Removed     ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="279.0" layoutY="142.0" prefHeight="28.0" prefWidth="111.0" text="-- No record --" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="294.0" layoutY="82.0" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #394d5f;" text="Total users :" textFill="#fef9e6">
+         <font>
+            <Font name="SansSerif Bold" size="21.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="543.0" layoutY="82.0" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #394d5f;" text="Logged in  : " textFill="#fef9e6">
+         <font>
+            <Font name="SansSerif Bold" size="21.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <CheckBox layoutX="294.0" layoutY="155.0" mnemonicParsing="false" onMouseClicked="#enableActions" text="All" />
+      <Button fx:id="editButton" disable="true" layoutX="371.0" layoutY="149.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-border-color: #0B1320;" text="Edit" textFill="#423f3f">
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </Button>
+      <Button fx:id="disableButton" disable="true" layoutX="471.0" layoutY="149.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-border-color: #0B1320;" text="Disable" textFill="#423f3f">
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="suspendButton" disable="true" layoutX="571.0" layoutY="149.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-border-color: #0B1320;" text="Suspend" textFill="#423f3f">
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeButton" disable="true" layoutX="671.0" layoutY="149.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-border-color: #0B1320;" text="Remove" textFill="#423f3f">
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="935.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/icons8_waste_52px.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="436.0" layoutY="82.0" prefHeight="40.0" prefWidth="61.0" style="-fx-background-color: #394d5f;" text="250" textFill="#fef9e6">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="685.0" layoutY="82.0" prefHeight="40.0" prefWidth="61.0" style="-fx-background-color: #394d5f;" text="208" textFill="#fef9e6">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Pane fx:id="loginNotifi" layoutX="759.0" layoutY="47.0" prefHeight="84.0" prefWidth="222.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 12;" visible="false">
+         <children>
+            <Label layoutX="12.0" layoutY="2.0" prefHeight="26.0" prefWidth="107.0" text="New notification" textFill="#394d5f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="13.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_new_moon_48px.png" />
+               </image></ImageView>
+            <Label layoutX="35.0" layoutY="33.0" prefHeight="26.0" prefWidth="136.0" text="You have 2 new users." textFill="#252c32" />
+            <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="13.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_new_moon_48px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="51.0" prefHeight="26.0" prefWidth="175.0" text="' Serene.G ' has been suspended." textFill="#252c32" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="953.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/appicon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

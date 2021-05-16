@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #fef9e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.AdmitRoomGUIController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="1000.0" style="-fx-background-color: #394d5f;">
+         <children>
+            <Label layoutX="23.0" layoutY="8.0" prefHeight="40.0" prefWidth="200.0" text="Admit Room" textFill="#fef9e6">
+               <font>
+                  <Font name="SansSerif Bold" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="950.0" layoutY="14.0" onMouseClicked="#showNotification" onMouseExited="#hideNotification" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_topic_push_notification_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="72.0" prefHeight="35.0" prefWidth="166.0" style="-fx-background-color: #394d5f;" text="New Patient :" textFill="#fef9e6">
+         <font>
+            <Font name="SansSerif Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="72.0" prefHeight="35.0" prefWidth="45.0" style="-fx-background-color: #394d5f;" text="8" textFill="#fef9e6">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="SansSerif Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="244.0" layoutY="74.0" onMouseClicked="#showAddNew" onMouseExited="#hideAddNew" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/icons8_plus_48px.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="131.0" prefHeight="433.0" prefWidth="269.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="100.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/image9.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="159.0" prefHeight="19.0" prefWidth="39.0" text="PID " textFill="#3c3737">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="63.0" layoutY="156.0" prefHeight="25.0" prefWidth="54.0" text="P4820">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField disable="true" layoutX="63.0" layoutY="189.0" prefHeight="25.0" prefWidth="39.0" text="AB+">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="334.0" prefHeight="19.0" prefWidth="63.0" text="Diseases" textFill="#3c3737">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="63.0" layoutY="293.0" prefHeight="25.0" prefWidth="191.0" text="48/7 A, Pitakotte, Kotte">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="6.0" layoutY="366.0" prefHeight="28.0" prefWidth="86.0" text="Doc's Remark" textFill="#3c3737">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextArea disable="true" layoutX="98.0" layoutY="374.0" prefHeight="43.0" prefWidth="155.0" text="Slipped disk @ C4, C5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextArea>
+            <ToggleButton layoutX="175.0" layoutY="14.0" mnemonicParsing="false" text="Red Notice" textFill="#a91b0d">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </ToggleButton>
+            <Label contentDisplay="TOP" layoutX="18.0" layoutY="124.0" prefHeight="19.0" prefWidth="112.0" text="S. Gaz De Silva" textFill="#3c3737">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="32.0" layoutX="125.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_male_52px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="15.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_drop_of_blood_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_age_48px.png" />
+               </image>
+            </ImageView>
+            <TextField disable="true" layoutX="63.0" layoutY="221.0" prefHeight="25.0" prefWidth="123.0" text="27 Years 8 Months">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_phone_100px.png" />
+               </image>
+            </ImageView>
+            <TextField disable="true" layoutX="63.0" layoutY="255.0" prefHeight="25.0" prefWidth="123.0" text="011 232 45 89">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_location_48px.png" />
+               </image>
+            </ImageView>
+            <TextField disable="true" layoutX="64.0" layoutY="331.0" prefHeight="25.0" prefWidth="191.0" text="None">
+               <font>
+                  <Font name="SansSerif Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="78.0" prefHeight="28.0" prefWidth="166.0" style="-fx-background-color: #394d5f;" text="Choose room type" textFill="#fef9e6">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="SansSerif Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comb" layoutX="526.0" layoutY="80.0" prefHeight="25.0" prefWidth="226.0" />
+      <Label layoutX="789.0" layoutY="84.0" text="Availability :" textFill="#363030">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="867.0" layoutY="84.0" text="Available" textFill="#22a144">
+         <font>
+            <Font name="SansSerif Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="935.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/icons8_checked_52px.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="342.0" layoutY="122.0" mnemonicParsing="false" onAction="#getRoomInfo" style="-fx-background-radius: 12; -fx-border-radius: 12; -fx-border-color: #394d5f;" text="Get Room Info" textFill="#394d5f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane layoutX="342.0" layoutY="178.0" prefHeight="160.0" prefWidth="588.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label fx:id="Lb1" layoutX="33.0" layoutY="25.0" text="Room Type :" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb1_1" layoutX="117.0" layoutY="25.0" text="Premium Twin Sharing" textFill="#3f3a3a" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb2" layoutX="307.0" layoutY="25.0" text="Room No :" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb3" layoutX="453.0" layoutY="25.0" text="Bed Count :" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb3_1" layoutX="537.0" layoutY="25.0" text="2" textFill="#403a3a" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb4" layoutX="33.0" layoutY="65.0" text="Bed No :" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb4_1" layoutX="95.0" layoutY="65.0" text="20 , 21" textFill="#3f3a3a" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Lb2_1" layoutX="380.0" layoutY="20.0" prefHeight="29.0" prefWidth="32.0" text="67" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Label fx:id="Lb5" layoutX="33.0" layoutY="105.0" text="Available Bed No :" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Lb5_1" layoutX="150.0" layoutY="105.0" text="21" textFill="#3f3a3a" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="343.0" layoutY="348.0" prefHeight="97.0" prefWidth="588.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button layoutX="29.0" layoutY="14.0" mnemonicParsing="false" onAction="#getBed" style="-fx-background-color: #394d5f;" text="Get Bed" textFill="#fef9e6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField disable="true" layoutX="100.0" layoutY="14.0" prefHeight="25.0" prefWidth="67.0" text="21" />
+            <Label layoutX="29.0" layoutY="64.0" text="Time reserved :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="R_time" layoutX="130.0" layoutY="65.0" text="5/12/2021 @ 12.30 p.m" textFill="#3f3a3a" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="14.0" text="QR code :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="QR_Code" fitHeight="50.0" fitWidth="50.0" layoutX="426.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@image/icons8_qr_code_64px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="508.0" layoutY="491.0" mnemonicParsing="false" onAction="#discardInfo" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: #FFFFFF;" text="Discard" textFill="#394d5f">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="668.0" layoutY="491.0" mnemonicParsing="false" onAction="#successSaving" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: #394d5f;" text="Save &amp; Admit" textFill="#fef9e6">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Pane fx:id="notification" layoutX="767.0" layoutY="47.0" prefHeight="66.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 12;" visible="false">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="11.0" layoutY="7.0" prefHeight="17.0" prefWidth="105.0" text="New notification" textFill="#394d5f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="12.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icons8_new_moon_48px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="32.0" prefHeight="17.0" prefWidth="144.0" text="You have new 8 patients." textFill="#3b4146" />
+         </children>
+      </Pane>
+      <Pane fx:id="addNewPatients" layoutX="242.0" layoutY="118.0" onMouseEntered="#keepDisplay" onMouseExited="#exitDisplay" prefHeight="142.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 12;" visible="false">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="13.0" layoutY="10.0" text="Add new patients" textFill="#394d5f">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="41.0" text="P9087 - " textFill="#394d5f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="41.0" prefHeight="17.0" prefWidth="87.0" text="Cassi Amanda" textFill="#394d5f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="62.0" text="P9345 - " textFill="#394d5f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="63.0" prefHeight="19.0" prefWidth="101.0" text="John K. Wilfred" textFill="#394d5f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="83.0" text="P4876 - " textFill="#394d5f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="84.0" prefHeight="19.0" prefWidth="101.0" text="Katie McGrath" textFill="#394d5f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="103.0" text="P2145 - " textFill="#394d5f">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="104.0" prefHeight="19.0" prefWidth="115.0" text="Hirushi Weeragoda" textFill="#394d5f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="953.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/appicon.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="savePane" layoutX="382.0" layoutY="228.0" prefHeight="216.0" prefWidth="311.0" style="-fx-background-color: #ffffff; -fx-background-radius: 12;" visible="false">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="23.0" prefHeight="32.0" prefWidth="200.0" text="Data Saved Succesfully!">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="127.0" layoutY="158.0" mnemonicParsing="false" onAction="#okButton" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #394d5f;" text="OK" textFill="#fef9e6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="97.0" fitWidth="105.0" layoutX="105.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/check02.gif" />
+               </image></ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
