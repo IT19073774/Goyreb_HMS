@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.PatientDischargeInfoWardGUIController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1366.0" style="-fx-background-color: #394d5f;">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="94.0" layoutX="1268.0" layoutY="616.0">
+               <image>
+                  <Image url="@../../../../../NetBeansProjects/Goyreb_HMS_2/WhatsApp%20Image%202021-04-17%20at%2020.40.46.jpeg" />
+               </image>
+            </ImageView>
+            <TabPane layoutX="62.0" layoutY="86.0" prefHeight="562.0" prefWidth="1206.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Patient's  Details">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fef9e6;">
+                           <children>
+                              <Label layoutX="336.0" layoutY="85.0" prefHeight="42.0" prefWidth="134.0" text="Patient ID" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="590.0" layoutY="94.0" promptText="Patient ID" />
+                              <Button layoutX="846.0" layoutY="93.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #394d5f;" text="Get Data" textFill="WHITE" />
+                              <Label layoutX="335.0" layoutY="155.0" prefHeight="25.0" prefWidth="100.0" text="Patient Name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="588.0" layoutY="154.0" promptText="Patient Name" />
+                              <Label layoutX="346.0" layoutY="227.0" prefHeight="25.0" prefWidth="95.0" text="Gender" textFill="#141414">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton layoutX="573.0" layoutY="230.0" mnemonicParsing="false" text="Male" textFill="#111010" />
+                              <RadioButton layoutX="691.0" layoutY="229.0" mnemonicParsing="false" text="Female" textFill="#0a0a0a">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <Label layoutX="331.0" layoutY="290.0" prefHeight="25.0" prefWidth="105.0" text="Blood Group" textFill="#0d0d0d">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="587.0" layoutY="289.0" promptText="Blood Group" />
+                              <Label layoutX="334.0" layoutY="357.0" prefHeight="29.0" prefWidth="102.0" text="Phone No" textFill="#070606">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="588.0" layoutY="358.0" promptText="Phone Number" />
+                              <Button layoutX="1090.0" layoutY="455.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #394d5f;" text="Next" textFill="#f8f7f7">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Ward Details">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fef9e6;">
+                           <children>
+                              <Label layoutX="192.0" layoutY="83.0" prefHeight="45.0" prefWidth="146.0" text="Ward No " textFill="#171717">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="323.0" layoutY="90.0" promptText="Ward No" />
+                              <Label layoutX="353.0" layoutY="189.0" prefHeight="20.0" prefWidth="80.0" text="Ward Type" textFill="#111111">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="Wardtypebox" editable="true" layoutX="558.0" layoutY="184.0" prefHeight="26.0" prefWidth="160.0" />
+                              <DatePicker layoutX="192.0" layoutY="318.0" />
+                              <Label layoutX="226.0" layoutY="279.0" text="Date of Admission" textFill="#111111">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="723.0" layoutY="278.0" text="Date of Discharge" textFill="#1e1e1e">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker layoutX="704.0" layoutY="323.0" />
+                              <Button layoutX="1061.0" layoutY="442.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #394d5f;" text="Next" textFill="WHITE" />
+                              <Label layoutX="637.0" layoutY="91.0" prefHeight="27.0" prefWidth="81.0" text="Bed No">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="759.0" layoutY="94.0" promptText="Bed No" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="background-color: #fef9e6;" text="Doctor's  Details">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #fef9e6;">
+                           <children>
+                              <Label layoutX="368.0" layoutY="121.0" prefHeight="28.0" prefWidth="89.0" text="Doctor ID" textFill="#222121">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="674.0" layoutY="123.0" promptText="Doctor ID" />
+                              <Label layoutX="364.0" layoutY="200.0" text="Doctor's Name" textFill="#111010">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="673.0" layoutY="194.0" promptText="Doctor's Name" />
+                              <Label layoutX="362.0" layoutY="269.0" prefHeight="30.0" prefWidth="144.0" text="Doctor's Specialization" textFill="#171717">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="671.0" layoutY="269.0" promptText="specialization" />
+                              <TextField alignment="CENTER" layoutX="359.0" layoutY="372.0" prefHeight="38.0" prefWidth="491.0" promptText="Remarks">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Button layoutX="1088.0" layoutY="453.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="64.0" style="-fx-background-color: #394d5f;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <Label layoutX="18.0" layoutY="19.0" prefHeight="53.0" prefWidth="378.0" text="Patient Discharge Details - Ward ......" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1366.0" style="-fx-background-color: #FEF9E6;">
+               <children>
+                  <ImageView fitHeight="123.0" fitWidth="94.0" layoutX="1268.0" layoutY="616.0">
+                     <image>
+                        <Image url="@../../../../../NetBeansProjects/Goyreb_HMS_1/WhatsApp%20Image%202021-04-17%20at%2020.40.46.jpeg" />
+                     </image>
+                  </ImageView>
+                  <TabPane layoutX="62.0" layoutY="86.0" prefHeight="562.0" prefWidth="1206.0" stylesheets="@stylesheet.css" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Patient's  Details">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #394D5F;" stylesheets="@stylesheet.css">
+                                 <children>
+                                    <Label layoutX="336.0" layoutY="85.0" prefHeight="42.0" prefWidth="134.0" styleClass="lab2" text="Patient ID" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="590.0" layoutY="94.0" promptText="Patient ID" styleClass="txt1" />
+                                    <Button layoutX="846.0" layoutY="93.0" mnemonicParsing="false" styleClass="primary_button2" stylesheets="@stylesheet.css" text="Get Data" />
+                                    <Label layoutX="335.0" layoutY="155.0" prefHeight="27.0" prefWidth="135.0" styleClass="lab2" text="Patient Name" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="588.0" layoutY="154.0" prefHeight="39.0" prefWidth="228.0" promptText="Patient Name" styleClass="txt1" />
+                                    <Label layoutX="331.0" layoutY="227.0" prefHeight="25.0" prefWidth="95.0" styleClass="lab2" text="Gender" textFill="#f5f5f5">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <RadioButton layoutX="590.0" layoutY="226.0" mnemonicParsing="false" text="Male" textFill="#f8f8f8" />
+                                    <RadioButton layoutX="723.0" layoutY="227.0" mnemonicParsing="false" text="Female" textFill="WHITE" />
+                                    <Label layoutX="331.0" layoutY="290.0" prefHeight="27.0" prefWidth="120.0" styleClass="lab2" text="Blood Group" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="587.0" layoutY="289.0" promptText="Blood Group" styleClass="txt1" />
+                                    <Label layoutX="328.0" layoutY="363.0" prefHeight="29.0" prefWidth="102.0" styleClass="lab2" text="Phone No" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="588.0" layoutY="358.0" promptText="Phone Number" styleClass="txt1" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Ward Details">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #394d5f;" stylesheets="@stylesheet.css">
+                                 <children>
+                                    <Label layoutX="353.0" layoutY="113.0" prefHeight="45.0" prefWidth="146.0" styleClass="lab2" text="Ward No" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="557.0" layoutY="122.0" promptText="Ward Number" styleClass="txt1" />
+                                    <Label layoutX="353.0" layoutY="71.0" prefHeight="27.0" prefWidth="106.0" styleClass="lab2" text="Ward Type" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="192.0" layoutY="318.0" styleClass="txt1" />
+                                    <Label layoutX="226.0" layoutY="279.0" styleClass="lab2" text="Date of Admission" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="723.0" layoutY="278.0" styleClass="lab2" text="Date of Discharge" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="704.0" layoutY="323.0" />
+                                    <ChoiceBox id="WardType" fx:id="WardType" layoutX="558.0" layoutY="67.0" prefHeight="39.0" prefWidth="219.0" styleClass="txt1" />
+                                    <Label layoutX="353.0" layoutY="187.0" styleClass="lab2" text="Bed No" textFill="#f5f2f2">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="557.0" layoutY="183.0" promptText="Bed Number" styleClass="txt1" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Doctor's  Details">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #394d5f;" stylesheets="@stylesheet.css">
+                                 <children>
+                                    <Label layoutX="368.0" layoutY="121.0" prefHeight="28.0" prefWidth="89.0" styleClass="lab2" text="Doctor ID" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="674.0" layoutY="123.0" promptText="Doctor ID" styleClass="txt1" />
+                                    <Label layoutX="364.0" layoutY="200.0" styleClass="lab2" text="Doctor's Name" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="673.0" layoutY="194.0" promptText="Doctor's Name" styleClass="txt1" />
+                                    <Label layoutX="362.0" layoutY="269.0" prefHeight="30.0" prefWidth="209.0" styleClass="lab2" text="Doctor's Specialization" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="671.0" layoutY="269.0" promptText="specialization" styleClass="txt1" />
+                                    <TextField alignment="CENTER" layoutX="381.0" layoutY="369.0" prefHeight="53.0" prefWidth="491.0" promptText="Remarks" styleClass="txt1" />
+                                    <Button fx:id="btnSave2" layoutX="1080.0" layoutY="450.0" mnemonicParsing="false" onAction="#handleDialog" prefHeight="41.0" prefWidth="94.0" styleClass="primary_button2" stylesheets="@stylesheet.css" text="Save">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+                  <Label layoutX="18.0" layoutY="19.0" prefHeight="51.0" prefWidth="396.0" text="Patient Discharge Details - Ward">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

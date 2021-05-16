@@ -45,12 +45,12 @@
             </Label>
          </children>
       </Pane>
-      <ImageView fitHeight="51.0" fitWidth="72.0" layoutX="83.0" layoutY="668.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="51.0" fitWidth="72.0" layoutX="83.0" layoutY="668.0" onMouseClicked="#ContactOnClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/contactus_icon.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="22.0" layoutY="668.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="22.0" layoutY="668.0" onMouseClicked="#AboutOnClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/aboutus_icon.png" />
          </image>
@@ -150,7 +150,7 @@
                </effect>
             </Button>
             <Separator layoutX="16.0" layoutY="128.0" prefHeight="1.0" prefWidth="138.0" style="-fx-background-color: grey;" />
-            <Label layoutX="30.0" layoutY="60.0" text="Change Password">
+            <Label layoutX="30.0" layoutY="60.0" onMouseClicked="#ChangePWOnClick" text="Change Password">
                <font>
                   <Font size="14.0" />
                </font>
@@ -245,7 +245,7 @@
                         <Shadow />
                      </effect>
                   </Button>
-                  <Button layoutX="16.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="169.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Services" textFill="WHITE">
+                  <Button layoutX="16.0" layoutY="69.0" mnemonicParsing="false" onAction="#ServicesOnClick" prefHeight="36.0" prefWidth="169.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Services" textFill="WHITE">
                      <effect>
                         <Shadow />
                      </effect>
