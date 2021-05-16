@@ -29,14 +29,14 @@ public class DoctorGUIController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        ObservableList<String> list = FXCollections.observableArrayList("Male","Female"); 
-        Gender.setItems(list);
-        ObservableList<String> Bglist = FXCollections.observableArrayList("A","A-","B","B-","AB","AB-","O","O-"); 
-        BloodGroup.setItems(Bglist);
-         ObservableList<String> list1 = FXCollections.observableArrayList("Male","Female"); 
-        Gender1.setItems(list1);
-        ObservableList<String> Bglist1 = FXCollections.observableArrayList("A","A-","B","B-","AB","AB-","O","O-"); 
-        BloodGroup1.setItems(Bglist1);
+        //ObservableList<String> list = FXCollections.observableArrayList("Male","Female"); 
+        //Gender.setItems(list);
+        //ObservableList<String> Bglist = FXCollections.observableArrayList("A","A-","B","B-","AB","AB-","O","O-"); 
+        //BloodGroup.setItems(Bglist);
+        // ObservableList<String> list1 = FXCollections.observableArrayList("Male","Female"); 
+        //Gender1.setItems(list1);
+        //ObservableList<String> Bglist1 = FXCollections.observableArrayList("A","A-","B","B-","AB","AB-","O","O-"); 
+        //BloodGroup1.setItems(Bglist1);
     }    
     
 }

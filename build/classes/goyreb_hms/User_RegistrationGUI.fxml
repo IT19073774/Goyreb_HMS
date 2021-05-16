@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -13,21 +19,21 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #fef9e6;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.User_RegistrationGUIController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="838.0" style="-fx-background-color: #fef9e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goyreb_hms.User_RegistrationGUIController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="547.0" prefHeight="53.0" prefWidth="258.0" style="-fx-background-color: #fef9e6;" text="User Details" textAlignment="CENTER" textFill="#0b1320">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="14.0" prefHeight="53.0" prefWidth="258.0" style="-fx-background-color: #fef9e6;" text="User Details" textAlignment="CENTER" textFill="#0b1320">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <ImageView fitHeight="101.0" fitWidth="138.0" layoutX="1021.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="101.0" fitWidth="138.0" layoutX="736.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/side-logo.png" />
+            <Image url="@image/side-logo.png" />
          </image>
       </ImageView>
-      <Separator layoutX="325.0" layoutY="54.0" prefHeight="13.0" prefWidth="728.0" />
-      <Separator layoutX="325.0" layoutY="574.0" prefHeight="0.0" prefWidth="728.0" />
-      <TabPane layoutX="354.0" layoutY="78.0" prefHeight="480.0" prefWidth="699.0" tabClosingPolicy="UNAVAILABLE">
+      <Separator layoutX="40.0" layoutY="68.0" prefHeight="13.0" prefWidth="728.0" />
+      <Separator layoutX="40.0" layoutY="588.0" prefHeight="0.0" prefWidth="728.0" />
+      <TabPane layoutX="69.0" layoutY="92.0" prefHeight="480.0" prefWidth="699.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="    Create New User            ">
             <content>
