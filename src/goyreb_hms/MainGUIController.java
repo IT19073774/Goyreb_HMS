@@ -171,16 +171,22 @@ public class MainGUIController implements Initializable {
     
     @FXML
     void DischargeOnClick(ActionEvent event) throws Exception{
-        if (admitCombo.getValue().toString() == "Room") {
-            Parent root = FXMLLoader.load(getClass().getResource("AdmitRoomGUI.fxml"));
+        if (dischargeCombo.getValue().toString() == "Room") {
+            Parent root = FXMLLoader.load(getClass().getResource("PatientDischargeInfoRoom.fxml"));
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.setTitle("Hospital Management System");
             stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
             stage.show();
-        } else if (admitCombo.getValue().toString() == "Ward") {
-            
+        } else if (dischargeCombo.getValue().toString() == "Ward") {
+            Parent root = FXMLLoader.load(getClass().getResource("PatientDischargeInfoWardGUI.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setTitle("Hospital Management System");
+            stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+            stage.show();
         }
         
     }
@@ -188,6 +194,17 @@ public class MainGUIController implements Initializable {
     @FXML
     void LoginDetOnClick(MouseEvent event) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("LoginDetailsGUI.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Hospital Management System");
+        stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+        stage.show();
+    }
+    
+    @FXML
+    void ChangePWOnClick(MouseEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("ChangePwGUI.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);

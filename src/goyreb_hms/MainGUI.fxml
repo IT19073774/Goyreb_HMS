@@ -150,7 +150,7 @@
                </effect>
             </Button>
             <Separator layoutX="16.0" layoutY="128.0" prefHeight="1.0" prefWidth="138.0" style="-fx-background-color: grey;" />
-            <Label layoutX="30.0" layoutY="60.0" text="Change Password">
+            <Label layoutX="30.0" layoutY="60.0" onMouseClicked="#ChangePWOnClick" text="Change Password">
                <font>
                   <Font size="14.0" />
                </font>
