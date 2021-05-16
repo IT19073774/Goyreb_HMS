@@ -1,0 +1,147 @@
+
+.bg{
+    
+    -fx-background-color: #fef9e6;
+}
+
+.primary_button{
+    
+    -fx-border-color: #757C88;
+    -fx-border-radius:4;
+    -fx-background-color: #394D5F;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+}
+
+.primary_button:hover{
+    
+    -fx-background-color: #59788E;
+    
+}
+
+.primary_button:pressed{
+    
+    -fx-background-color: #151E3D;
+    
+}
+
+.tab {
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-background-color: #0B1320;
+}
+
+.tab .tab-label{
+    
+    -fx-text-fill:white; 
+    -fx-background-color: transparent;
+    -fx-font-family: serif;
+    -fx-text-align: center;
+    -fx-font-size: 24px;
+}
+
+.tab{
+    
+    -fx-border-radius: 0;
+    -fx-padding: 5 10 10 10;
+    -fx-pref-width: 200;
+    
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    
+    -fx-background-radius: 0;
+    -fx-text-fill:white;
+    -fx-text-align: center;
+}
+
+.tab-pane > .tab-header-area > .headers-region{
+    
+    -fx-background-color: #0B1320;
+    -fx-padding-top: 0;
+    -fx-padding-bottom: 10;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0 0 0 0;
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: #0B1320;
+}
+
+.tab:hover{
+    
+     -fx-background-color: #1B3050;
+    
+}
+.tab:selected{
+    
+    -fx-background-color: #243F69;
+    
+    
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    
+     -fx-border-width: 0;
+     -fx-border-color: -fx-focus-color;
+}
+
+.lab{
+    
+    -fx-text-fill:black;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    
+}
+
+.lab2{
+    
+    -fx-text-fill:white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    
+}
+
+.primary_button2{
+    
+    -fx-border-color: #FEF9E6;
+    -fx-border-radius:4;
+    -fx-background-color: #FEF9E6;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+
+}
+
+.primary_button2:hover{
+    
+    -fx-background-color: #FFFCF5;
+    
+}
+
+.primary_button2:pressed{
+    
+    -fx-background-color: #FDF1C5;
+    
+}
+
+.txt1{
+    
+    -fx-background-color: transparent;
+    -fx-border-color: #FEF9E6;
+    -fx-border-radius:6;
+    -fx-color: white;
+    -fx-font-style: italic
+}
+
+.txt2{
+    
+    -fx-background-color: transparent;
+    -fx-border-color: #394D5F;
+    -fx-border-radius:6;
+    -fx-color: black;
+    -fx-font-style: italic
+}
