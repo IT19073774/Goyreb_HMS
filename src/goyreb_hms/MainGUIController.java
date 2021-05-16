@@ -74,8 +74,8 @@ public class MainGUIController implements Initializable {
     }
     
     @FXML
-    void changePwOnClick(MouseEvent event) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("ChangePWGUIFXML.fxml"));
+    void PatientRegOnClick(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("Patient_RegistrationGUI.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
@@ -83,6 +83,7 @@ public class MainGUIController implements Initializable {
         stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
         stage.show();
     }
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

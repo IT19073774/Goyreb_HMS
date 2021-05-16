@@ -240,7 +240,7 @@
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="140.0" prefWidth="123.0">
                <children>
-                  <Button layoutX="16.0" layoutY="23.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="169.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Registration" textFill="WHITE">
+                  <Button layoutX="16.0" layoutY="23.0" mnemonicParsing="false" onAction="#PatientRegOnClick" prefHeight="36.0" prefWidth="169.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Registration" textFill="WHITE">
                      <effect>
                         <Shadow />
                      </effect>
