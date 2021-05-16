@@ -252,8 +252,8 @@
                   </Button>
                   <Pane layoutX="13.0" layoutY="117.0" prefHeight="51.0" prefWidth="176.0" style="-fx-border-color: #394D5F; -fx-border-style: dotted;">
                      <children>
-                        <ComboBox layoutX="14.0" layoutY="7.0" prefHeight="36.0" prefWidth="80.0" promptText="Room" />
-                        <Button layoutX="101.0" layoutY="9.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="61.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="ADMIT" textFill="WHITE">
+                        <ComboBox fx:id="admitCombo" layoutX="14.0" layoutY="7.0" prefHeight="36.0" prefWidth="80.0" promptText="Room" />
+                        <Button layoutX="101.0" layoutY="9.0" mnemonicParsing="false" onAction="#AdmitOnClick" prefHeight="30.0" prefWidth="61.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="ADMIT" textFill="WHITE">
                            <effect>
                               <Shadow />
                            </effect>
@@ -265,8 +265,8 @@
                   </Pane>
                   <Pane layoutX="13.0" layoutY="171.0" prefHeight="51.0" prefWidth="176.0" style="-fx-border-color: #394D5F; -fx-border-style: dotted;">
                      <children>
-                        <ComboBox layoutX="14.0" layoutY="7.0" prefHeight="36.0" prefWidth="80.0" promptText="Room" />
-                        <Button layoutX="101.0" layoutY="9.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="61.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="DISCHARGE" textFill="WHITE">
+                        <ComboBox fx:id="dischargeCombo" layoutX="14.0" layoutY="7.0" prefHeight="36.0" prefWidth="80.0" promptText="Room" />
+                        <Button layoutX="101.0" layoutY="9.0" mnemonicParsing="false" onAction="#DischargeOnClick" prefHeight="30.0" prefWidth="61.0" style="-fx-background-color: #394D5F; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="DISCHARGE" textFill="WHITE">
                            <effect>
                               <Shadow />
                            </effect>

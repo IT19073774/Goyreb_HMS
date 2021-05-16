@@ -6,7 +6,8 @@
 package goyreb_hms;
 
 import java.io.IOException;
-
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.input.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,6 +19,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.control.ComboBox;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -37,7 +39,13 @@ public class MainGUIController implements Initializable {
     
     @FXML
     private javafx.scene.control.Button logoutbtn;
-
+    
+    @FXML
+    private ComboBox admitCombo;
+    
+    @FXML
+    private ComboBox dischargeCombo;
+    
     @FXML
     void displayProfilePanel(MouseEvent event) {
         profilePanel.setVisible(true);
@@ -140,6 +148,44 @@ public class MainGUIController implements Initializable {
     }
     
     @FXML
+    void AdmitOnClick(ActionEvent event) throws Exception{
+        if (admitCombo.getValue().toString() == "Room") {
+            Parent root = FXMLLoader.load(getClass().getResource("AdmitRoomGUI.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setTitle("Hospital Management System");
+            stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+            stage.show();
+        } else if (admitCombo.getValue().toString() == "Ward") {
+            Parent root = FXMLLoader.load(getClass().getResource("AdmitWardGUI.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setTitle("Hospital Management System");
+            stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+            stage.show();
+        }
+        
+    }
+    
+    @FXML
+    void DischargeOnClick(ActionEvent event) throws Exception{
+        if (admitCombo.getValue().toString() == "Room") {
+            Parent root = FXMLLoader.load(getClass().getResource("AdmitRoomGUI.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setTitle("Hospital Management System");
+            stage.getIcons().add(new Image("file:C:\\Users\\Ahvinn Kanagar\\Documents\\NetBeansProjects\\Goyreb_HMS\\src\\goyreb_hms\\image\\appicon.png"));
+            stage.show();
+        } else if (admitCombo.getValue().toString() == "Ward") {
+            
+        }
+        
+    }
+    
+    @FXML
     void LoginDetOnClick(MouseEvent event) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("LoginDetailsGUI.fxml"));
         Scene scene = new Scene(root);
@@ -153,6 +199,10 @@ public class MainGUIController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        ObservableList<String> list = FXCollections.observableArrayList("Room","Ward");
+        admitCombo.setItems(list);
+        dischargeCombo.setItems(list);
+        
     }    
     
 }
